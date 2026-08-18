@@ -4,12 +4,8 @@
 <meta name="google-site-verification" content="zK8hxP_fh-zsgMKSSWYJ8916o7yNQn4xSOp67P7asaQ" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cardvalia - 名刺管理アプリ</title>
-<meta name="description" content="Cardvaliaは、いただいた名刺をご自身のGoogleドライブだけで管理できる、完全個人向けの名刺管理アプリです。名刺の登録・検索・タグ管理ができ、データはすべてご自身のGoogleドライブ内に保存されます。">
-<meta property="og:title" content="Cardvalia - 名刺管理アプリ">
-<meta property="og:description" content="いただいた名刺をご自身のGoogleドライブだけで管理できる、完全個人向けの名刺管理アプリです。">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://digital-raptors.com/">
+<title>digital-raptors.com</title>
+<meta name="description" content="digital-raptors.comで公開しているアプリの一覧です。">
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -25,90 +21,72 @@
     margin: 0 auto;
     padding: 56px 24px 80px;
   }
-  .logo-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 8px;
-  }
-  .logo-row img { width: 48px; height: 48px; border-radius: 12px; }
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6, #d946ef);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
+    margin: 0 0 8px;
   }
   .subtitle {
     color: #94a3b8;
     font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin: 4px 0 32px;
+    margin: 0 0 40px;
   }
-  p { color: #cbd5e1; }
-  .features {
-    margin: 24px 0;
-    padding: 0;
+  .app-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
   }
-  .features li {
-    position: relative;
-    padding-left: 22px;
-    margin-bottom: 10px;
-    color: #cbd5e1;
-  }
-  .features li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #818cf8;
-  }
-  .cta {
-    display: inline-block;
-    margin-top: 32px;
-    padding: 14px 32px;
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
-    color: #fff;
-    font-weight: 700;
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
     text-decoration: none;
-    border-radius: 12px;
+    color: inherit;
   }
-  .links {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+  .app-card img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  .app-card-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6, #d946ef);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .app-card-desc {
+    color: #94a3b8;
     font-size: 0.85rem;
+    margin-top: 2px;
   }
-  .links a { color: #a5b4fc; margin-right: 20px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="logo-row">
-    <img src="https://hideyukikumura.github.io/cardvault/icon-192.png" alt="Cardvalia">
-    <h1>Cardvalia</h1>
-  </div>
-  <p class="subtitle">BIZ-CARD SHOWDOWN</p>
+  <h1>digital-raptors.com</h1>
+  <p class="subtitle">公開しているアプリの一覧です。</p>
 
-  <p>Cardvaliaは、いただいた名刺をご自身のGoogleドライブだけで管理できる、完全個人向けの名刺管理アプリです。</p>
-
-  <ul class="features">
-    <li>名刺の登録・検索・タグ管理ができます</li>
-    <li>データはすべて、ご自身のGoogleドライブ内の選択したフォルダに保存されます（開発者のサーバーには一切保存されません）</li>
-    <li>合戦モード・デュエルモードなど、名刺の相手を思い出すための遊び心のある機能もあります</li>
+  <ul class="app-list">
+    <li>
+      <a class="app-card" href="cardvalia.html">
+        <img src="https://hideyukikumura.github.io/cardvault/icon-192.png" alt="">
+        <div>
+          <div class="app-card-name">Cardvalia</div>
+          <div class="app-card-desc">名刺管理アプリ</div>
+        </div>
+      </a>
+    </li>
   </ul>
-
-  <div class="links">
-    <a href="privacy.html">プライバシーポリシー</a>
-    <a href="mailto:hideyuki.kum@gmail.com">お問い合わせ</a>
-  </div>
 </div>
 </body>
 </html>
