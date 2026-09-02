@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LexiconRogueアプリのプライバシーポリシー">
+<meta property="og:title" content="プライバシーポリシー | LexiconRogue">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digital-raptors.com/lexiconrogue-privacy.html">
+<title>プライバシーポリシー | LexiconRogue</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper: #f7f2e8;
+    --paper-raised: #efe6d3;
+    --ink: #24201a;
+    --muted: #6f6553;
+    --rule: #ddd0b4;
+    --accent: #a06a2c;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper: #1c1712;
+      --paper-raised: #262019;
+      --ink: #ece3d2;
+      --muted: #a89a80;
+      --rule: #3c3427;
+      --accent: #d9a34a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper: #1c1712;
+    --paper-raised: #262019;
+    --ink: #ece3d2;
+    --muted: #a89a80;
+    --rule: #3c3427;
+    --accent: #d9a34a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  .back-link{
+    display: inline-block;
+    margin-bottom: 28px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .masthead{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .mark{
+    width: 30px;
+    height: 30px;
+    flex: none;
+    color: var(--accent);
+  }
+  .wordmark{
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+
+  h1{
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.4;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+
+  .meta{
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.03em;
+    margin: 0 0 36px;
+  }
+  .meta span + span::before{
+    content: "・";
+    margin: 0 6px;
+    color: var(--rule);
+  }
+
+  .rule{
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 40px;
+  }
+
+  .lede{
+    font-size: 16px;
+    color: var(--ink);
+    margin: 0 0 48px;
+    max-width: 58ch;
+  }
+
+  section{
+    margin-bottom: 40px;
+  }
+  section h2{
+    font-family: "Shippori Mincho", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--ink);
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  section h2 .num{
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+  }
+  section p{
+    margin: 0 0 12px;
+    max-width: 62ch;
+    color: var(--ink);
+  }
+  section p.note{
+    color: var(--muted);
+    font-size: 14px;
+  }
+  section ul{
+    margin: 0 0 12px;
+    padding-left: 1.3em;
+    max-width: 60ch;
+  }
+  section li{
+    margin-bottom: 6px;
+  }
+
+  .contact{
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-top: 8px;
+  }
+  .contact .label{
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .contact .value{
+    font-size: 16px;
+    color: var(--accent);
+    font-weight: 600;
+    word-break: break-all;
+  }
+
+  footer{
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 12.5px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px){
+    .page{ padding: 48px 18px 72px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <a class="back-link" href="lexiconrogue.html">← LexiconRogue</a>
+  <div class="masthead">
+    <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 8C13.5 6.2 9.8 5.4 6 5.4v18.2c3.8 0 7.5.8 10 2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16 8c2.5-1.8 6.2-2.6 10-2.6v18.2c-3.8 0-7.5.8-10 2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16 8v18.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <span class="wordmark">LexiconRogue</span>
+  </div>
+
+  <h1>プライバシーポリシー</h1>
+  <p class="meta"><span>制定日：2026年9月2日</span><span>対象アプリ：LexiconRogue（パッケージ名 com.lexiconrogue.app）</span></p>
+  <hr class="rule">
+
+  <p class="lede">
+    「LexiconRogue」（以下「本アプリ」）は、個人が開発・提供する英単語学習ローグライク・デッキビルダーゲームです。
+    本ポリシーでは、本アプリにおける利用者情報の取り扱いについて説明します。
+  </p>
+
+  <section>
+    <h2><span class="num">第1条</span>取得する情報について</h2>
+    <p>
+      本アプリは、外部のサーバーへ情報を送信する機能を一切持っていません。インターネット通信を行わないため、
+      氏名・メールアドレス・位置情報・端末識別子などの個人情報を取得・収集することはありません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第2条</span>端末内に保存されるデータ</h2>
+    <p>本アプリのプレイ体験のため、以下の情報のみを端末内（アプリのローカルストレージ）に保存します。これらのデータが端末の外に送信されることはありません。</p>
+    <ul>
+      <li>プレイヤーが入力したキャラクター名</li>
+      <li>ハイスコア・ランキングの記録（到達フロア・使用単語数・正解率など）</li>
+      <li>間違えた英単語の記録（復習機能のための学習履歴）</li>
+      <li>選択中の英語レベルやゲーム内設定（音量など）</li>
+    </ul>
+    <p class="note">これらは本アプリをアンインストールすると自動的に削除されます。端末の「設定」からアプリのデータ・キャッシュを削除することでも消去できます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">第3条</span>広告・分析ツール・第三者提供</h2>
+    <p>
+      本アプリは、広告SDK・アクセス解析（アナリティクス）・クラッシュレポートなど、いかなる第三者製ツールも組み込んでいません。
+      また、ログイン・アカウント登録の機能も存在しないため、第三者に個人情報を提供することはありません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第4条</span>お子様のプライバシーについて</h2>
+    <p>
+      本アプリは個人情報を一切収集しないため、年齢を問わず安心してご利用いただけます。保護者の方でご不明な点がある場合は、
+      下記の連絡先までお問い合わせください。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第5条</span>本ポリシーの変更</h2>
+    <p>
+      本ポリシーの内容は、法令の変更やアプリ機能の追加に伴い、予告なく変更されることがあります。
+      変更後の内容は本ページにて公開した時点で効力を持つものとします。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第6条</span>お問い合わせ</h2>
+    <p>本アプリまたは本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+    <div class="contact">
+      <div class="label">CONTACT</div>
+      <div class="value">hideyuki.kum@gmail.com</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 LexiconRogue</span>
+    <span>Last updated: 2026-09-02</span>
+  </footer>
+</div>
+
+</body>
+</html>

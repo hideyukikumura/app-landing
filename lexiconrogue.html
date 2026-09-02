@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LexiconRogue - 英単語ローグライク・デッキビルダー</title>
+<meta name="description" content="LexiconRogueは、英単語クイズに正解してカードを操る英単語学習ローグライク・デッキビルダーです。中学英語から大学受験レベルまで対応。">
+<meta property="og:title" content="LexiconRogue - 英単語ローグライク・デッキビルダー">
+<meta property="og:description" content="英単語クイズに正解してカードを強化。中学英語〜大学受験レベルの英単語学習ローグライク・デッキビルダー。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digital-raptors.com/lexiconrogue.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f7f2e8;
+    --paper-raised: #efe6d3;
+    --ink: #24201a;
+    --muted: #6f6553;
+    --rule: #ddd0b4;
+    --accent: #a06a2c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .logo-row img { width: 48px; height: 48px; border-radius: 12px; }
+  h1 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+  }
+  .subtitle {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin: 6px 0 32px;
+  }
+  p { color: var(--ink); }
+  .features {
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .features li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .features li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .status {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .links {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+  }
+  .links a { color: var(--accent); margin-right: 20px; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="./">← アプリ一覧</a>
+  <div class="logo-row">
+    <img src="assets/lexiconrogue-icon.png" alt="LexiconRogue">
+    <h1>LexiconRogue</h1>
+  </div>
+  <p class="subtitle">英単語ローグライク・デッキビルダー</p>
+
+  <p>英単語クイズに正解してカードを操る、英単語学習×ローグライク・デッキビルダーです。「なんとなく知っている」英単語を、バトルの中で何度も使いながら「確実に使える」語彙力に変えていきます。</p>
+
+  <ul class="features">
+    <li>カードを使うには意味を選ぶクイズに正解する必要がある、緊張感のあるバトルシステム</li>
+    <li>名詞・動詞・形容詞・副詞など品詞を意識したコンボ・シナジー</li>
+    <li>中学１年レベルから大学受験対策まで、6段階の英語レベル</li>
+    <li>間違えた単語を自動記録し、あとから復習できるクイック復習機能</li>
+    <li>遺物（レリック）集めやハイスコアランキングなど、ローグライクとしてのやり込み要素</li>
+  </ul>
+
+  <div class="status">現在 Google Play 内部テストの準備を進めています。公開まで今しばらくお待ちください。</div>
+
+  <div class="links">
+    <a href="lexiconrogue-privacy.html">プライバシーポリシー</a>
+    <a href="mailto:hideyuki.kum@gmail.com">お問い合わせ</a>
+  </div>
+</div>
+</body>
+</html>
