@@ -18,6 +18,11 @@
   --rare: #d4a643;
   --uncommon: #8fa8c9;
   --common: #6f7488;
+  --type-attack: #ad3339;
+  --type-skill: #3568b3;
+  --type-power: #7a49a3;
+  --type-weakness: #7a4536;
+  --type-status: #6c6975;
 }
 
 * { box-sizing: border-box; }
@@ -217,6 +222,15 @@ a:hover { text-decoration: none; }
 .pill-common { background: rgba(111,116,136,0.2); color: var(--common); }
 .pill-uncommon { background: rgba(143,168,201,0.2); color: var(--uncommon); }
 .pill-rare { background: var(--accent-soft); color: var(--rare); }
+
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: -2px;
+}
 
 .pos-noun { color: var(--noun); }
 .pos-verb { color: var(--verb); }
