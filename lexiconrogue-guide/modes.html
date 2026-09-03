@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マップとモード - LexiconRogue 攻略ガイド</title>
+<meta name="description" content="LexiconRogueのマップ構造と、戦闘・エリート・ボス・宝箱・ショップ・イベントなど各マスの詳細を解説します。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-mobile-nav">
+  <a class="brand" href="index.html">LexiconRogue 攻略ガイド</a>
+  <select onchange="if(this.value) location.href=this.value">
+    <option value="">ページを選択...</option>
+    <option value="index.html">トップ</option>
+    <option value="guide.html">遊び方・操作方法</option>
+    <option value="modes.html" selected>マップとモード</option>
+    <option value="cards.html">カード図鑑</option>
+    <option value="relics.html">レリック図鑑</option>
+    <option value="glossary.html">用語集</option>
+  </select>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">LexiconRogue</a>
+    <div class="brand-sub">攻略ガイド</div>
+    <nav>
+      <a href="index.html">トップ</a>
+      <a href="guide.html">遊び方・操作方法</a>
+      <a href="modes.html" class="active">マップとモード</a>
+      <a href="cards.html">カード図鑑</a>
+      <a href="relics.html">レリック図鑑</a>
+      <a href="glossary.html">用語集</a>
+    </nav>
+    <a class="back-link" href="https://digital-raptors.com/lexiconrogue.html">← アプリ紹介ページへ</a>
+  </aside>
+
+  <main class="content">
+    <h1>マップとモード</h1>
+    <p class="lede">マップの構造と、各マスで発生するイベントを解説します。</p>
+
+    <h2>マップの構造</h2>
+    <p>1回のラン（周回）につき、マップは16階層（0〜15階）で構成されます。最初の1歩は必ず戦闘マスから始まり、3〜4本のルートが枝分かれ・合流しながら進み、最終的にすべてのルートが最上階（15階）の単一のボスマスへ収束します。行き止まりは発生しません。</p>
+    <ul>
+      <li><strong>7階</strong>：休憩マスが必ず配置されます（現在準備中の機能です）</li>
+      <li><strong>8階</strong>：宝箱マスが必ず配置されます</li>
+      <li><strong>11階</strong>：ショップマスが必ず配置されます</li>
+      <li><strong>8階以降</strong>：エリートマスが出現するようになります</li>
+    </ul>
+    <p>それ以外の階では、戦闘・？イベント・ショップ・休憩のいずれかが確率で配置されます。</p>
+    <img class="shot" src="assets/screenshots/04_map.png" alt="マップ画面のスクリーンショット">
+    <p class="shot-caption">マップは下から上へ進みます。ノードの色と文字でマスの種類が一目で分かります。</p>
+
+    <h2>マスの種類</h2>
+
+    <h3>⚔ 戦闘</h3>
+    <p>通常の敵と戦います。ゲーム内の通算勝利数に応じて、ギミックを持たない易しい敵編成（Easyプール）から、品詞相性やギミックを持つ手強い編成（Hardプール）へ自動的に切り替わります。勝利するとゴールドと、3枚から1枚選べるカード報酬を獲得できます。</p>
+
+    <h3>精鋭 エリート</h3>
+    <p>通常戦闘より強化された敵と戦う、リスクの高いマスです。勝利すると、カード報酬に加えて<strong>コモンまたはアンコモンのレリックを1個確定で獲得</strong>できます。</p>
+
+    <h3>ボス</h3>
+    <p>各ルートの最終到達点にある、そのActで最も強い敵です。3種類のボスからランダムに1体が出現します。勝利すると<strong>レア・レリックを3択</strong>から1個選んで獲得できます。</p>
+
+    <h3>宝 宝箱</h3>
+    <p>タップすると開封演出のあと、レアリティ抽選（Common 60% / Uncommon 30% / Rare 10%）でレリックを1個、確定で獲得できます。1回の訪問につき1個だけです。</p>
+    <img class="shot" src="assets/screenshots/07_chest.png" alt="宝箱を開封してレリックを獲得した画面のスクリーンショット">
+    <p class="shot-caption">宝箱はタップするだけでレリックが1個手に入ります。</p>
+
+    <h3>店 商人の店（ショップ）</h3>
+    <p>ゴールドを使って以下の3つのサービスを利用できます。</p>
+    <ul>
+      <li><strong>特殊カードの購入</strong>：コモン（50G）・アンコモン（100G）・レア（200G）が各1枚並びます。</li>
+      <li><strong>レリックの購入</strong>：レアリティ抽選（Common 55% / Uncommon 35% / Rare 10%）の1枠。価格はコモン150G・アンコモン250G・レア350Gです。</li>
+      <li><strong>カード除去サービス</strong>：デッキから1枚を選んで100Gで完全に削除できます。1回の訪問につき1回までです。</li>
+    </ul>
+    <img class="shot" src="assets/screenshots/08_shop.png" alt="商人の店画面のスクリーンショット">
+    <p class="shot-caption">カード・レリックの購入とカード除去サービスが1画面で利用できます。</p>
+
+    <h3>？ イベント</h3>
+    <p>「？」マスでは、以下の2種類のテキストイベントのどちらかがランダムに発生します。</p>
+    <ul>
+      <li><strong>狂った辞書編纂者</strong>：英単語クイズに3問連続で正解するか、150ゴールドを支払うことでレリックを1個獲得できます。クイズに失敗すると、現在HPの20%のダメージを受けます。</li>
+      <li><strong>言葉を奪う祠</strong>：「品詞1つのカード性能が半減する呪い」を受ける代わりに強力なレア・レリックを1個獲得するか、祈りを捧げてHPを10回復するかを選べます。呪いは、該当の品詞のカードで5回正解すると解除されます。</li>
+    </ul>
+    <img class="shot" src="assets/screenshots/09_event.png" alt="言葉を奪う祠イベント画面のスクリーンショット">
+    <p class="shot-caption">「言葉を奪う祠」イベント。呪いと引き換えに強力なレリックを得るか、安全に回復するかを選びます。</p>
+
+    <h3>休 休憩</h3>
+    <div class="note-box">休憩マスはマップ上に必ず配置されますが、現在のバージョンではまだ機能が実装されていません（マスを踏むと「準備中」の表示になります）。今後のアップデートで対応予定です。</div>
+
+    <h2>ラン開始直後の「旅立ちの選択」</h2>
+    <p>ラン（周回）を開始すると、マップに進む前に3択のボーナスイベントが表示されます。</p>
+    <ul>
+      <li><strong>百科事典の盾を持って出発する</strong>：スターターレリック「百科事典の盾」を1個獲得</li>
+      <li><strong>代償を払ってレアレリックを求める</strong>：最大HPを15失う代わりに、ランダムなレア・レリックを1個獲得</li>
+      <li><strong>旅の軍資金を持って出発する</strong>：100ゴールドを持って出発</li>
+    </ul>
+    <img class="shot" src="assets/screenshots/03_floor0.png" alt="旅立ちの選択イベント画面のスクリーンショット">
+    <p class="shot-caption">ラン開始直後に必ず表示される3択イベントです。</p>
+
+    <h2>戦闘勝利後の報酬</h2>
+    <p>戦闘に勝利すると、ゴールドと3枚のカードからの1択（スキップ可）が表示されます。カードのレアリティ抽選はCommon 60% / Uncommon 30% / Rare 10%です。エリート戦の場合はレリックが確定で付与され、ボス戦の場合はレア・レリックの3択が追加で表示されます。</p>
+    <img class="shot" src="assets/screenshots/06_victory.png" alt="戦闘勝利画面のスクリーンショット">
+    <p class="shot-caption">勝利画面。ゴールドとカード報酬（レリック報酬がある場合はそれも）がまとめて表示されます。</p>
+
+    <h2>ラン終了後の要素</h2>
+    <h3>クイック復習（リベンジテスト）</h3>
+    <p>ランが終了すると、その周回中に間違えた英単語だけを使った復習戦闘に挑戦できます。攻撃してこない訓練用の的が相手なので、安心して苦手な単語を復習できます。</p>
+
+    <h3>ランキング</h3>
+    <p>到達度を中心としたスコアが記録され、歴代のランキングとして確認できます。</p>
+
+    <footer>
+      <p>LexiconRogue は個人開発のAndroidアプリです。<a href="https://digital-raptors.com/lexiconrogue.html">アプリ紹介ページ</a>・<a href="https://digital-raptors.com/lexiconrogue-privacy.html">プライバシーポリシー</a></p>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>

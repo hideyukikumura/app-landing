@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遊び方・操作方法 - LexiconRogue 攻略ガイド</title>
+<meta name="description" content="LexiconRogueの基本的な遊び方、クイズと戦闘のルール、操作方法を解説します。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-mobile-nav">
+  <a class="brand" href="index.html">LexiconRogue 攻略ガイド</a>
+  <select onchange="if(this.value) location.href=this.value">
+    <option value="">ページを選択...</option>
+    <option value="index.html">トップ</option>
+    <option value="guide.html" selected>遊び方・操作方法</option>
+    <option value="modes.html">マップとモード</option>
+    <option value="cards.html">カード図鑑</option>
+    <option value="relics.html">レリック図鑑</option>
+    <option value="glossary.html">用語集</option>
+  </select>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">LexiconRogue</a>
+    <div class="brand-sub">攻略ガイド</div>
+    <nav>
+      <a href="index.html">トップ</a>
+      <a href="guide.html" class="active">遊び方・操作方法</a>
+      <a href="modes.html">マップとモード</a>
+      <a href="cards.html">カード図鑑</a>
+      <a href="relics.html">レリック図鑑</a>
+      <a href="glossary.html">用語集</a>
+    </nav>
+    <a class="back-link" href="https://digital-raptors.com/lexiconrogue.html">← アプリ紹介ページへ</a>
+  </aside>
+
+  <main class="content">
+    <h1>遊び方・操作方法</h1>
+    <p class="lede">LexiconRogueの基本的な流れと、戦闘・クイズのルール、操作方法をまとめます。</p>
+
+    <h2>基本の流れ</h2>
+    <p>ゲームを開始すると、まず英語レベルを選択します。ラン開始直後には「旅立ちの選択」イベントで3択のボーナスを選び、そのあとマップ画面に進みます。マップは下から上に16階層あり、各マスを選んで進みながらボスを目指します。</p>
+    <ol>
+      <li>英語レベルを選択してゲーム開始</li>
+      <li>「旅立ちの選択」で最初のボーナスを1つ選ぶ</li>
+      <li>マップ上のマスを選んで1階層ずつ進む（戦闘・宝箱・ショップ・イベントなど）</li>
+      <li>戦闘に勝つとゴールドとカード、状況によってはレリックを獲得</li>
+      <li>最終階のボスを倒すとそのAct（周回）はクリア</li>
+    </ol>
+    <img class="shot" src="assets/screenshots/02_level_select.png" alt="英語レベル選択画面のスクリーンショット">
+    <p class="shot-caption">ゲーム開始時に、中学1年レベルから大学受験対策レベルまで6段階から英語レベルを選べます。</p>
+
+    <h2>戦闘とクイズの基本ルール</h2>
+    <p>戦闘は自分のターンとカードプレイ、敵のターンの繰り返しです。1ターンに使えるエナジーは3、手札は5枚まで持てます。カードは<strong>そのままでは発動しません</strong>。手札のカードを前方向にドラッグしてプレイすると、そのカードに紐づく英単語のクイズが表示され、<strong>正解して初めてカードの効果（攻撃・シールドなど）が発動</strong>します。不正解の場合、そのカードの効果は発動しません。</p>
+
+    <h3>2種類の出題形式</h3>
+    <ul>
+      <li><strong>英→和（EN→JP）</strong>：英単語が大きく表示され、4つの日本語訳から正しい意味を選びます。</li>
+      <li><strong>和→英（JP→EN）</strong>：日本語の意味が表示され、4つの英単語から正しいスペルを選びます。</li>
+    </ul>
+    <img class="shot" src="assets/screenshots/05_battle_quiz.png" alt="戦闘中にクイズへ答える画面のスクリーンショット">
+    <p class="shot-caption">カードをドラッグしてプレイすると、その場でクイズが表示されます。正解して初めてカードの効果が発動します。</p>
+
+    <h3>品詞コンボ</h3>
+    <p>カードにはそれぞれ「名詞・動詞・形容詞・副詞・その他」のいずれかの品詞が割り当てられています。<strong>直前に正解したカードと同じ品詞のカードに連続で正解する</strong>と品詞コンボが成立し、2枚目以降のダメージ・シールドに+2ずつのボーナスが加算されていきます。品詞が途切れる（別の品詞に正解する、または不正解になる）とコンボはリセットされます。</p>
+
+    <h3>敵の相性システム</h3>
+    <p>一部の敵は特定の品詞に弱かったり、耐性・無効を持っていたりします。中には以下のような特殊なギミックを持つ敵もいます。</p>
+    <ul>
+      <li><strong>気絶</strong>：弱点の品詞で正解すると、その敵は次の攻撃を1回スキップします。</li>
+      <li><strong>回避</strong>：特定の品詞を当てるまで、それ以外の攻撃をすべて回避（ダメージ0）します。</li>
+      <li><strong>シールド貫通・無効化</strong>：特定の品詞のシールドしか効かない、または特定の品詞のシールドだけが一切効かない攻撃を持つ敵がいます。</li>
+    </ul>
+
+    <h2>操作方法</h2>
+    <ul>
+      <li><strong>カードを使う</strong>：手札のカードを上方向にドラッグしてプレイします。</li>
+      <li><strong>カードの詳細を見る</strong>：カードを軽くタップすると、効果の詳細（右側パネル）が表示されます。</li>
+      <li><strong>クイズに解答する</strong>：4つの選択肢のいずれかをタップします。</li>
+      <li><strong>読み上げ機能</strong>：クイズが表示されると、対象の英単語（和→英の場合は4つの選択肢すべて）が自動で読み上げられます。「再生」ボタンでいつでも聞き直せます。読み上げのON/OFF・音量・速さは設定画面で調整できます。</li>
+      <li><strong>設定を開く</strong>：画面右上の歯車アイコンから、英語レベルの変更、BGM/SE音量、読み上げ設定、手札の並べ替え順を変更できます。</li>
+    </ul>
+    <img class="shot" src="assets/screenshots/10_settings.png" alt="設定画面のスクリーンショット">
+    <p class="shot-caption">設定画面では英語レベルの切り替えのほか、音量・読み上げ機能のON/OFF・速さ・音量を調整できます。</p>
+
+    <div class="note-box">
+      読み上げ機能は端末の音声合成エンジン（TTS）を利用します。英語音声が利用できない環境では、自動的に読み上げがスキップされます（クラッシュはしません）。
+    </div>
+
+    <footer>
+      <p>LexiconRogue は個人開発のAndroidアプリです。<a href="https://digital-raptors.com/lexiconrogue.html">アプリ紹介ページ</a>・<a href="https://digital-raptors.com/lexiconrogue-privacy.html">プライバシーポリシー</a></p>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
