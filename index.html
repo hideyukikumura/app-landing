@@ -6,6 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>digital-raptors.com</title>
 <meta name="description" content="digital-raptors.comで公開しているアプリの一覧です。">
+<meta property="og:title" content="digital-raptors.com">
+<meta property="og:description" content="digital-raptors.comで公開しているアプリの一覧です。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digital-raptors.com/">
+<meta property="og:image" content="https://digital-raptors.com/assets/digital-raptors-top.jpg">
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -16,10 +21,22 @@
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", sans-serif;
     line-height: 1.7;
   }
+  .hero {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+  }
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
   .wrap {
     max-width: 640px;
     margin: 0 auto;
-    padding: 56px 24px 80px;
+    padding: 40px 24px 80px;
   }
   h1 {
     font-size: 1.5rem;
@@ -72,6 +89,9 @@
 </style>
 </head>
 <body>
+<header class="hero">
+  <img src="assets/digital-raptors-top.jpg" alt="DIGITAL RAPTORS - Development Collective" width="1600" height="893">
+</header>
 <div class="wrap">
   <h1>digital-raptors.com</h1>
   <p class="subtitle">公開しているアプリの一覧です。</p>
@@ -101,6 +121,15 @@
         <div>
           <div class="app-card-name">SevenBridge</div>
           <div class="app-card-desc">ダークファンタジー・カードRPG</div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="app-card" href="musicraptors.html">
+        <img src="assets/musicraptors-icon.png" alt="">
+        <div>
+          <div class="app-card-name">MUSIC RAPTOR</div>
+          <div class="app-card-desc">タップ＆スワイプ リズムアクション</div>
         </div>
       </a>
     </li>

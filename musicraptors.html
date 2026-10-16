@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUSIC RAPTOR - タップ＆スワイプ リズムアクション</title>
+<meta name="description" content="MUSIC RAPTOR（ミュージックラプター）は、左右2つのレーンに流れてくるノーツをタップ＆スワイプで叩く、ネオンが輝くリズムアクションゲームです。">
+<meta property="og:title" content="MUSIC RAPTOR - タップ＆スワイプ リズムアクション">
+<meta property="og:description" content="左右2レーンをタップ＆スワイプ！PERFECTを重ねてフィーバーで会場を沸かせよう。ネオンが輝くリズムアクションゲーム。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digital-raptors.com/musicraptors.html">
+<meta property="og:image" content="https://digital-raptors.com/assets/musicraptors-title.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700&family=Noto+Sans+JP:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0b0918;
+    --bg-raised: #15122a;
+    --ink: #ece9ff;
+    --muted: #9a94bf;
+    --rule: #2c2650;
+    --accent: #5fe3ff;
+    --violet: #a77bff;
+    --magenta: #ff5fc8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .logo-row img { width: 48px; height: 48px; border-radius: 12px; }
+  h1 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0;
+    background: linear-gradient(90deg, var(--accent), var(--violet), var(--magenta));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle {
+    color: var(--accent);
+    font-family: "Oxanium", "Noto Sans JP", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    margin: 6px 0 24px;
+  }
+  .hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 0 28px rgba(167, 123, 255, 0.25);
+    margin: 0 0 28px;
+  }
+  h2 {
+    font-family: "Oxanium", "Noto Sans JP", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 36px 0 8px;
+  }
+  .features {
+    margin: 16px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .features li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+  }
+  .features li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    background: var(--magenta);
+    box-shadow: 0 0 6px var(--magenta);
+  }
+  .shots {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0 0;
+  }
+  .shots img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--rule);
+  }
+  .songs {
+    margin: 8px 0 0;
+    padding-left: 1.3em;
+  }
+  .status {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 20px;
+    background: var(--bg-raised);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .links {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+  }
+  .links a { color: var(--accent); margin-right: 20px; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="./">← アプリ一覧</a>
+  <div class="logo-row">
+    <img src="assets/musicraptors-icon.png" alt="MUSIC RAPTOR">
+    <h1>MUSIC RAPTOR</h1>
+  </div>
+  <p class="subtitle">TAP &amp; SWIPE RHYTHM ACTION</p>
+
+  <img class="hero" src="assets/musicraptors-title.jpg" alt="MUSIC RAPTOR タイトル画像">
+
+  <p>ネオンの光に包まれたステージで、音楽に合わせてタップ＆スワイプ！左右2つのレーンに流れてくるノーツを、リズムに合わせて叩く、シンプルで爽快なリズムアクションゲームです。</p>
+
+  <h2>遊び方</h2>
+  <p>ノーツが判定ラインに重なる瞬間に、レーンの下のエリアをタップ。金色に光るノーツは、矢印の方向（上下左右）へスワイプします。タップエリアには、次に来るのが「タップ（〇）」か「スワイプ（三角の向き）」かが表示されるので、初めてでもすぐに遊べます。</p>
+
+  <ul class="features">
+    <li>良いタイミングで叩くほどフィーバーゲージが溜まり、満タンでフィーバーモードに。曲のテンポに合わせて観客がフラッシュのように浮かび上がり、PERFECT のたびに歓声が響きます</li>
+    <li>プレイ中は曲の歌詞がカラオケのように一行ずつ流れます</li>
+    <li>EASY / NORMAL / HARD の3つの難易度</li>
+    <li>曲・難易度ごとに上位10件のハイスコアを保存。ランクインしたら記録に名前を付けて、家族や友だちと1台で競い合えます</li>
+  </ul>
+
+  <div class="shots">
+    <img src="assets/musicraptors-shot2.jpg" alt="プレイ画面（フィーバー中）">
+    <img src="assets/musicraptors-shot1.jpg" alt="曲選択画面">
+    <img src="assets/musicraptors-shot3.jpg" alt="ハイスコア画面">
+  </div>
+
+  <h2>収録曲</h2>
+  <ul class="songs">
+    <li>Say, Yeah, 'Cause! [Y-style]</li>
+    <li>Caught a role! v5.5</li>
+    <li>マイスウィート・ハムスター</li>
+  </ul>
+
+  <div class="status">現在 Google Play での公開に向けて準備を進めています。公開まで今しばらくお待ちください。</div>
+
+  <div class="links">
+    <a href="musicraptors-privacy.html">プライバシーポリシー</a>
+    <a href="mailto:hideyuki.kum@gmail.com">お問い合わせ</a>
+  </div>
+</div>
+</body>
+</html>
